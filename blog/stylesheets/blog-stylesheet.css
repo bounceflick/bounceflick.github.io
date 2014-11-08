@@ -1,0 +1,23 @@
+* {
+  margin-bottom: 20px;
+}
+
+div {
+  border:1px solid black;
+}
+
+.first {
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td{
+  border:1px solid black;
+  padding: 10px;
+}
