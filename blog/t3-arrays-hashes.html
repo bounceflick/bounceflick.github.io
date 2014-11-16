@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="blogs/stylesheets/blog-stylesheet.css" />
+  <title>Blog Template</title>
+</head>
+
+<body>
+  <div class="first">
+    <h1>Rum Rum</h1>
+    <p>I'm a sous chef who's cooking up code!</p>
+    <table class="first">
+      <tr>
+        <td>Home</td>
+        <td>Contact Me</td>
+        <td>Work</td>
+        <td>Linkedin</td>
+        <td>Twitter</td>
+        <td>Facebook</td>
+        <td>Github</td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <p>I'm taking example  from Chris Pine's book since I think it's illustrative of the difference between hashes and arrays.   Below, we can make a dictionary for little C's vocabulary using both hashes and arrays:</p>
+
+    <pre class="code">
+      #!/usr/bin/ruby
+      dict_array = [] #array literal; same as Array.new
+      dict_hash = {} #hash literal; same as Hash.new
+      dict_array[0] = 'candle'
+      dict_array[1] = 'glasses'
+      dict_array[2] = 'truck'
+      dict_array[3] = 'Alicia'
+      dict_hash['shia-a'] = 'candle'
+      dict_hash['shaya' ] = 'glasses'
+      dict_hash['shasha']  = 'truck'
+      dict_hash['sh-sha'] = 'Alicia'
+
+
+    dict_array.each do |word|
+      puts word
+    end
+
+    dict_hash.each do |c_word, word|
+      puts "#{c_word}: #{word}"
+    end
+    </pre>
+    <p>As pointed out by Pine:
+      <i>if I have to use an array, I have to remember that slot 0 is for "shia-a" slot 1 is for "shaya" and so on. But if I use a hash, it's easy! Slot "shia-a" holds the word for "shia-a" of course. There's nothing to remember. You might have noticed that when we used each, the objects in the hash didn't come out in the same order we put them in. (I mean, they could, I suppose...it's technically possible. They just don't usually.) Arrays are for keeping things in order; hashes are for keeping things referenced by other things.</i>
+    </p>
+
+    <p>Another way to put this is that hashes are great for lookups, but not for preserving order.  So, based on the stated requirements, use the right data structure!</p>
+
+
+  </div>
+
+</body>
+</html>
