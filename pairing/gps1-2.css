@@ -1,1 +1,32 @@
 /* include your css here */
+
+.attribution {
+  display: inline;
+}
+
+.attribution h2 {
+  padding-right:30px;
+  float: left;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+.roles{
+  display: block;
+}
+
+.roles img{
+  height: 90px;
+  width:90px;
+}
+
+.explanation {
+  display: inline-block;
+}
+
+.explanation h3 {
+  align: center;
+}
