@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="blogs/stylesheets/blog-stylesheet.css" />
+  <title>Blog Template</title>
+</head>
+
+<body>
+  <div class="first">
+    <h1>Rum Rum</h1>
+    <p>I'm a sous chef who's cooking up code!</p>
+    <table class="first">
+      <tr>
+        <td>Home</td>
+        <td>Contact Me</td>
+        <td>Work</td>
+        <td>Linkedin</td>
+        <td>Twitter</td>
+        <td>Facebook</td>
+        <td>Github</td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <p>Now this is a funky enumerable!  Cycle is a enumberable who can create an infinite loop if not careful, but who's main use is to loop data sets.  Useful examples of this include recurring data like dates, menus, etc.   Below is a good example.</p>
+
+    <pre class="code">
+     days_of_week = %w{Monday Tuesday Wednesday Thursday Friday Saturday Sunday}
+     => ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
+     # days of the week in a repeating sequence.
+     days = days_of_week.cycle
+     => #<enumerable::Enumerator:0x147c0b0>
+
+     # Enumerator's "next" method gives us the next day of the week
+     days.next
+     => "Monday"
+
+     days.next
+     => "Tuesday"
+
+     days.next
+     => "Wednesday"
+
+     # Enumerator's "rewind" method resets the enumerator back
+     # to the first item
+     days.rewind
+     => #<enumerable::Enumerator:0x14
+
+     days.next
+     => "Monday"
+
+     ...
+
+     # If you keep going, the enumerator will "wrap around" back
+     # to the beginning
+     days.next
+     => "Saturday"
+
+     days.next
+     => "Sunday"
+
+     days.next
+     => "Monday"
+   </pre>
+   <p>What this is great for is recurring items, where you don't want to specify a data structure that loops back on itself (e.g. a linked list).
+  </p>
+
+</div>
+
+</body>
+</html>
