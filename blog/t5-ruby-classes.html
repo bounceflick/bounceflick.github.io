@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="blogs/stylesheets/blog-stylesheet.css" />
+  <title>Blog Template</title>
+</head>
+
+<body>
+  <div class="first">
+    <h1>Rum Rum</h1>
+    <p>I'm a sous chef who's cooking up code!</p>
+    <table class="first">
+      <tr>
+        <td>Home</td>
+        <td>Contact Me</td>
+        <td>Work</td>
+        <td>Linkedin</td>
+        <td>Twitter</td>
+        <td>Facebook</td>
+        <td>Github</td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <p>The below is an example of the encrypt class based on Caesar's algorithm.</p>
+
+    <pre class="code">
+class Cipher
+  def initialize(shift, alphabet = (('a'..'z').to_a).join)
+    @chars = alphabet.chars.to_a
+    @blank_chars = ['^', '$', '#', '@', '%', '&', '*']
+    @numbers = (0..9).to_a
+    @kept_chars = ['?', '.', '!', ':', '-']
+
+    @decrypter = Hash[@chars.zip(@chars.rotate(-shift))]
+
+    @decrypter.default_proc = proc do |hash, key|
+      key
+    end
+    @blank_chars.map! {|char| @decrypter[char] = ' '}
+    @numbers.map! {|number| @decrypter[number.to_s] = number.to_s}
+    @kept_chars.map! {|symbol| @decrypter[symbol] = symbol}
+  end
+
+  def decrypt(string)
+    if string.match(/\d+/)
+      string.gsub!(/\d+/) { |num| num.to_i / 100 }
+    end
+    decrypted_text=@decrypter.values_at(*string.chars).join
+  end
+end
+   </pre>
+   <p>Two great lessons from this Class is how to encapsulate almost all the setup in the initialize method, and creatively use the splat operator in one of the methods.
+  </p>
+
+  <p>In the initialize method, we set up the decrypter hash with the alphabet, as well as blank charachters mapped to empty space, numbers mapped to number, and kept charachters as their original value.  However, the key is using the proc to return value, rather than nil when the key is not found the decrypter hash. </p>
+
+  <p>In terms of the splat operator, it really helps in creating an array of the entire string, and not having to cycle through with an enumerator.  In some ways, a splat can do more than enumerator, which is quite powerful.</p>
+
+</div>
+
+</body>
+</html>
