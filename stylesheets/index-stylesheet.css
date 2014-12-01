@@ -1,8 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,82 +19,72 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+sup {
+  vertical-align: super;
+  font-size: 50%;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+
 a img {
   border: none;
 }
 
-/* line 116, ../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* Variables */
-/* ---------------------------------------------------- */
-/* Mixins */
-/* ---------------------------------------------------- */
-/* Header Verbs Styling */
-/* --------- */
-/* line 33, ../sass/grid.scss */
 .page {
   width: 68.75rem;
   box-sizing: border-box;
   padding: 50px;
 }
 
-/* line 36, ../sass/grid.scss */
 .row {
   clear: both;
 }
-/* line 39, ../sass/grid.scss */
+
 .row::before, .row::after {
   display: table;
   content: '';
 }
-/* line 44, ../sass/grid.scss */
+
 .row::after {
   clear: both;
 }
 
-/* line 47, ../sass/grid.scss */
 .column {
   float: left;
 }
 
-/* line 11, ../sass/screen.scss */
 body {
   background-color: #f7f7f7;
   -webkit-transition: background-color 1s ease;
@@ -118,43 +103,40 @@ body {
   }
 }
 
-/* line 18, ../sass/screen.scss */
+
 body.frenchpaper {
   background-color: #fbfbf6;
   -webkit-transition: background-color 1s ease;
   -moz-transition: background-color 1s ease;
 }
 
-/* Header */
-/* line 25, ../sass/screen.scss */
 header {
   box-sizing: border-box;
   padding: 0px 1.25rem;
 }
 @media screen and (max-width: 500px) {
-  /* line 25, ../sass/screen.scss */
   header {
     box-sizing: border-box;
     padding: 0px 0.625rem;
   }
 }
-/* line 50, ../sass/config.scss */
+
 header h1 {
   font-family: "elena-web-basic", Helvetica, serif;
   font-size: 1.875rem;
   color: #333333;
   float: left;
 }
-/* line 55, ../sass/config.scss */
+
 header h1 em {
   font-style: italic;
 }
-/* line 57, ../sass/config.scss */
+
 header h1 a {
   color: #333333;
   text-decoration: none;
 }
-/* line 58, ../sass/config.scss */
+
 header h1 a:hover {
   text-decoration: underline;
 }
@@ -528,13 +510,13 @@ hr {
 /* line 233, ../sass/screen.scss */
 #home #pinboard-highlights .pin-description, #home #pinboard-highlights blockquote {
   display: none;
-  /* 
+  /*
   display: inline;
   font-family: "etica", Helvetica, sans-serif;
   font-size: px(13);
   line-height: 1.3;
   color: $inky;
-  background-color: $sunshine; 
+  background-color: $sunshine;
   */
 }
 /* line 245, ../sass/screen.scss */
