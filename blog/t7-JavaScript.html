@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Rum Rum is…writing</title>
+
+	<link href="../stylesheets/index-stylesheet.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+  <div class="page" id="article-index">
+    <header>
+      <div class="row">
+        <h1><a href="../index.html">Rum<sup>2</sup> <em>is…</em></h1>
+        <ul>
+          <!-- Have to change class ids appropriately -->
+          <li><a id="editing" href=#>writing</a>, </li>
+          <li><a id="making" href=#>building</a>, </li>
+          <li><a id="making" href=#>communicating</a>, </li>
+          <li>and <a id="playing" href=#><sup>(social)</sup> networking... </a></li>
+        </ul>
+      </div>
+      <hr>
+    </header>
+    <div class="entry-content">
+      <h2>Ruby Hashes vs. JavaScript Objects</h2>
+      <h3>---Week 7</h3>
+    </div>
+
+    <p><ol>
+    <li>Well JavaScript objects are in many ways very similar to Ruby’s Hash class, except for using the dot notation for property look-up. This is easily simulated Ruby’s method_missing to dynamically simulate getters and setters.</li>
+    <li>You can not access these instance variables in the same way that you can access (read or write to) JS properties. Ruby enforces a level of data encapsulation which protects these variables. Only when you are within the context of an object, which occurs during a method call, you can create or alter instance variables.</li>
+    <li>Ruby is a class based language, whereas JS is not (although you can achieve level of class like behaviour). In Ruby, every object has an associated class.</li>
+    <li>The essential difference is that JS does not restrict access to properties. The language itself does not support any data encapsulation on objects directly. That does not mean you can not achieve this in other ways however through function scopes acting as modules.  Ruby on the other hand enforces a certain level of data encapsulation by not providing a simple way to access its internal instance variables. You have to enter the object’s context through a method call to operate on instance variable</li>
+    </ol></p>
+
+    <footer>
+      <div class="row">
+        <hr>
+        <p><a href=#>+More about me?</a></p>
+      </div>
+    </footer>
+  </div>
+
+
+</body></html>
