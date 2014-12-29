@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="cheatsheet-stylesheet.css"/>
+	<title>Javascript Cheatsheet</title>
+</head>
+<body>
+	<h1>JavaScript CheatSheet</h1>
+	<div id="one">
+		<h3>Embedding javascript in html file</h3>
+		<pre class="code">
+	&lthtml&gt
+	&ltheader&gt
+	&ltscript src="trains.js"&gt&lt/script&gt &lt/header&gt
+	&ltbody&gt
+	&lth1&gtJAVASCRIPT EXPRESS!&lt/h1&gt
+	&lt/body&gt
+	&lt/html&gt
+		</pre>
+	</div>
+	<div id="two">
+		<h3>Built-in javascript functions</h3>
+		<pre class="code">
+	console.log();
+	alert();
+	confirm();
+	prompt();
+
+	//Typeof
+	typeof true;
+	typeof 42;
+		</pre>
+	</div>
+	<div id="three">
+		<h3>Looping</h3>
+		<pre class="code">
+	var i=1;
+	while (i<0){
+	console.log(i);
+	};
+	//Looping from 10 to 1
+	for (var i=10; i>0;i--){
+	console.log(i);
+	};
+		</pre>
+	</div>
+	<div id="four">
+		<h3>Branching</h3>
+		<pre class="code">
+	if (*some condition is true*) {
+	*do this code!*
+	} else if (*some OTHER condition is true*) {
+	*do something for this condition!*
+	} else {
+	*IN ALL OTHER CASES, do this code instead!*
+	}
+		</pre>
+	</div>
+	<div id="five">
+		<h3>Arrays</h3>
+		<pre class="code">
+	//Array
+	var myArray=[];
+	myArray.push(1);
+	myArray.push("hi");
+	myArray.push("wookie", "hookie", "cookie");
+	myArray.join("");
+	myArray.reverse();
+	myArray.slice(0,3);
+	myArray.slice(-2);
+		</pre>
+	</div>
+	<div id="six">
+		<h3>Objects</h3>
+		<pre class="code">
+	// Get keys
+	Object.keys(myObj);
+	// Create object
+	var myBox={};
+	myBox = {height: 6, width: 8, length: 10, volume: 480, material: "cardboard",
+	contents: ["Great Expectations", "The Remains of the Day", "Peter Pan"]};
+	myBox.width;
+	myBox.width=12;
+	myBox.newVariable="Cookie";
+	//equals
+	myBox["newVariable"]="Cookie";
+	delete myBox.width;
+		</pre>
+	</div>
+</body>
+</html>
